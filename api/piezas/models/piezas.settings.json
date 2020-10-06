@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "piezas",
+  "info": {
+    "name": "piezas"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "alumno": {
+      "model": "alumnos",
+      "via": "piezas"
+    },
+    "tipo_de_pieza": {
+      "model": "tipo-de-pieza"
+    }
+  }
+}
