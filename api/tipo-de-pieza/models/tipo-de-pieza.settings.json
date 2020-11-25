@@ -2,15 +2,25 @@
   "kind": "collectionType",
   "collectionName": "tipo_de_piezas",
   "info": {
-    "name": "tipo de pieza"
+    "name": "Clases"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
-    "nombre": {
+    "Titulo": {
       "type": "string"
+    },
+    "descripcion": {
+      "type": "text"
+    },
+    "imagen_de_clase": {
+      "type": "string"
+    },
+    "piezas": {
+      "via": "clase_perteciente",
+      "collection": "piezas"
     }
   }
 }

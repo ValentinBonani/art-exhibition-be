@@ -12,18 +12,7 @@
     "email": {
       "type": "email"
     },
-    "imagen": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
-    "Nombre": {
+    "nombre": {
       "type": "string"
     },
     "instagram": {
@@ -38,6 +27,12 @@
     "piezas": {
       "via": "alumno",
       "collection": "piezas"
+    },
+    "imagen": {
+      "type": "string"
+    },
+    "otras_paginas": {
+      "type": "string"
     }
   }
 }

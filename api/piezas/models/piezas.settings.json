@@ -9,17 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "imagenes": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "titulo": {
       "type": "string"
     },
@@ -27,8 +16,30 @@
       "model": "alumnos",
       "via": "piezas"
     },
-    "tipo_de_pieza": {
-      "model": "tipo-de-pieza"
+    "imagen_1": {
+      "type": "string"
+    },
+    "imagen_2": {
+      "type": "string"
+    },
+    "imagen_3": {
+      "type": "string"
+    },
+    "imagen_4": {
+      "type": "string"
+    },
+    "metodo_construccion": {
+      "type": "string"
+    },
+    "metodo_decoracion": {
+      "type": "string"
+    },
+    "link_de_venta": {
+      "type": "string"
+    },
+    "clase_perteciente": {
+      "model": "tipo-de-pieza",
+      "via": "piezas"
     }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "recursos_generales",
+  "info": {
+    "name": "Recursos Generales"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "imagen_portada_1": {
+      "type": "string"
+    },
+    "imagen_portada_2": {
+      "type": "string"
+    },
+    "imagen_portada_3": {
+      "type": "string"
+    },
+    "imagen_portada_4": {
+      "type": "string"
+    },
+    "titulo_portada_1": {
+      "type": "string"
+    },
+    "titulo_portada_2": {
+      "type": "string"
+    },
+    "titulo_portada_3": {
+      "type": "string"
+    },
+    "titulo_portada_4": {
+      "type": "string"
+    },
+    "descripcion_muestra": {
+      "type": "richtext"
+    }
+  }
+}
